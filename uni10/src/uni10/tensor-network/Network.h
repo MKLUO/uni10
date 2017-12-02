@@ -204,6 +204,8 @@ public:
     /// The output shows how the network is contracted.
 
     friend std::ostream& operator<< (std::ostream& os, Network& net);
+
+	std::vector<std::string> get_symbols() const;
 private:
     void preprint(std::ostream& os, Node* nd, int layer)const;  //pre-order print
     std::vector<std::string> names;
